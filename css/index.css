@@ -68,53 +68,29 @@ h1, h2, h3, h4, h5 {
 
 body{
 	max-width: 880px;
-	margin: auto;
+    margin: auto;
+    line-height: 1.5;
 }
-.navigation{
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 50px;
-	margin-top: 40px;
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
-nav a{
-	text-decoration: none;
-	color: silver;
+.navCSS{
+    width: 85%;    
+}
+.navCSS nav a{
+    text-decoration: none;
+    color: slategrey;
 }
 a{
-	padding-right: 25px;
-	padding-left: 25px;
-	margin: auto;
+    display: flex;
+    flex-direction: row;
+    
 }
-.logo{
-	display: flex;
-	padding-left: 15px;
-	margin: auto;
-}
-header h1{
-	font-size: 75px;
-	position: absolute;
-   text-align: center;
-   top: 25%;
-   left: 10%;
-   height: 100%;
-   width: 30%;
-   margin-left: 120px;
-}
-header{
-	display: flex;
-	justify-content: space-evenly;
-	padding: 40px;
-}
-.header button{
-	margin-top: -100px;
-	background-color: white;
-	border: 1px solid black;
-	padding: 10px;
-	width: 40%;
-}
-.largeLogo{
-	margin-left: 400px;
-}
+
+
+
 .topSection{
 	display: flex;
 	flex-direction: row;
