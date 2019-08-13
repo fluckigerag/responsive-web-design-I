@@ -184,8 +184,8 @@ footer{
     .largeLogo {
         display: none;
     }
-    header {
-        
+    header h1, button{
+        position: absolute;   
     }
     .topSection {
         display: flex;
@@ -220,5 +220,23 @@ footer{
 /* TABLET MEDIA QUERIES */
 
 @media screen and (max-width: 800px) {
-
+    .navigation {
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;        
+    }
+    .logo {
+        padding-bottom: 20px;
+    }
+    nav a{
+        display: flex;
+        flex-wrap: wrap;        
+    }  
+    .largeLogo {
+        display: none;
+    }
+    .bottomSection{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
