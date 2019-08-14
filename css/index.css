@@ -71,25 +71,52 @@ body{
     margin: auto;
     line-height: 1.5;
 }
-.navigation {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+
+.navigation{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 50px;
+	margin-top: 40px;
 }
-.navCSS{
-    width: 85%;    
-}
-.navCSS nav a{
-    text-decoration: none;
-    color: slategrey;
+nav a{
+	text-decoration: none;
+	color: silver;
 }
 a{
-    display: flex;
-    flex-direction: row;
-    
+	padding-right: 25px;
+	padding-left: 25px;
+	margin: auto;
 }
-
-
+.logo{
+	display: flex;
+	padding-left: 15px;
+	margin: auto;
+}
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.headSection {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+.headSection h1{
+    font-size: 75px;
+    text-align: center;
+}
+.topSection, .bottomSection{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 40px;
+}
+section button{
+	background-color: white;
+	border: 1px solid black;
+	padding: 10px;
+	width: 40%;
+}
 
 .topSection{
 	display: flex;
@@ -111,8 +138,8 @@ a{
 	display: flex;
 	justify-content: space-between;
 	text-align: justify;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .services{
 	margin-right: 10px;
@@ -136,7 +163,29 @@ footer{
 	text-align: center;
 }
 
-/* MOBILE MEDIA QUERIES */ 
+
+
+/* TABLET MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+    .navigation {
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;        
+    }
+    .logo {
+        padding-bottom: 20px;
+    } 
+    .largeLogo {
+        display: none;
+    }
+    .bottomSection{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* MOBILE MEDIA QUERIE */
 
 @media screen and (max-width: 500px) {
     .navigation {
@@ -159,9 +208,6 @@ footer{
     }    
     .largeLogo {
         display: none;
-    }
-    header h1, button{
-        position: absolute;   
     }
     .topSection {
         display: flex;
@@ -190,29 +236,5 @@ footer{
     .vision {
         padding-left: 15px;
         padding-right: 20px;
-    }
-}
-
-/* TABLET MEDIA QUERIES */
-
-@media screen and (max-width: 800px) {
-    .navigation {
-        text-align: center;
-        display: flex;
-        flex-direction: column-reverse;        
-    }
-    .logo {
-        padding-bottom: 20px;
-    }
-    nav a{
-        display: flex;
-        flex-wrap: wrap;        
-    }  
-    .largeLogo {
-        display: none;
-    }
-    .bottomSection{
-        margin-left: 20px;
-        margin-right: 20px;
     }
 }
